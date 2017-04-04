@@ -43,6 +43,8 @@ export interface I18NextOptions {
     /**
      * TranslateI18Next options
      */
+    use?: Array<any>;
+    defaultUse?: Array<any>;
     mapping?:ITranslationKeyMapping;
     browserLanguageDetector?:ILanguageDetector;
     supportedLanguages?: Array<string>;

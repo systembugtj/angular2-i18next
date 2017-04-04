@@ -37,6 +37,12 @@ export class ApplicationModule {
 ```
 
 **app.ts**
+Call translateI18Next.init({ ... }) with the options you want to initialize i18next with.
+
+You can also pass the special options use and defaultUse which are each Arrays that may contain "plugins" such as a cache or backend you wish to use. See .use method of i18next.
+
+The default plugins for defaultUse are [i18nextXHRBackend, browserLanguageDetectorCtor]
+
 ```typescript
 import {TranslateI18Next} from 'angular2-i18next/index';
 

@@ -45,11 +45,19 @@ export class TranslateI18Next {
 
         this.mapping = options.mapping || this.mapping;
 
+        // default plugins
+        let defaultUse = options.defaultUse || [i18nextXHRBackend, browserLanguageDetectorCtor];
+        const pluginsUsed = defaultUse.concat(options.use || []);
+
         return this.i18nextPromise =
             new Promise<void>((resolve:(thenableOrResult?:void | Promise<void>) => void, reject:(error:any) => void) => {
+
+                // use each plugin
+                pluginsUsed.forEach(plugin => {
+                    i18next.use(plugin)
+                });
+
                 i18next
-                    .use(i18nextXHRBackend)
-                    .use(browserLanguageDetectorCtor)
                     .init(
                         Object.assign({}, options, {
                             fallbackLng: fallbackLng,
