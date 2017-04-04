@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Config } from './shared/index';
+import { Config } from './shared/config/env.config';
 import './operators';
 
 import {TranslateI18Next} from 'angular2-i18next/index';
@@ -11,6 +11,7 @@ import {TranslateI18Next} from 'angular2-i18next/index';
   moduleId: module.id,
   selector: 'sd-app',
   templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css'],
 })
 export class AppComponent {
 
