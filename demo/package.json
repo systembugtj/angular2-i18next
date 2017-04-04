@@ -149,5 +149,6 @@
     "systemjs": "0.19.41",
     "zone.js": "^0.8.4",
     "ts-smart-logger": "0.0.4",
-    angular2-i18next": "1.1.1"  }
+    "angular2-i18next": "1.1.1" 
+ }
 }
