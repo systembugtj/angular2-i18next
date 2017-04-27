@@ -22,6 +22,7 @@ src/*.js.map
 /webpack.config.js
 
 .gitignore
-
+.npmignore
 *.ngsummary.json
 *.ngfactory.ts
+*.lock

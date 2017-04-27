@@ -14,8 +14,8 @@ npm install ngx-i18next --save
 
 ## Demo
 
-**1** git clone --progress -v "git@github.com:systembugtj/ngx-i18next.git" "sources"  
-**2** cd sources\ngx-i18next\demo  
+**1** git clone --progress -v "git@github.com:systembugtj/ngx-i18next.git"
+**2** cd ngx-i18next/demo  
 **3** npm install  
 **4** npm start 
 
