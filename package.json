@@ -1,6 +1,6 @@
 {
   "name": "ngx-i18next",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "license": "MIT",
   "keywords": [
     "angular",
@@ -10,12 +10,14 @@
   ],
   "author": "Alex Poter",
   "scripts": {
+    "clean": "rimraf build lib",
     "build": "node_modules/.bin/ngc -p tsconfig.json",
-    "deploy": "yarn install && npm run build && npm publish ./"
+    "deploy": "yarn install && npm run clean && npm run build && npm publish ./"
   },
   "dependencies": {
     "i18next": "2.5.1",
-    "i18next-xhr-backend": "0.5.3"
+    "i18next-xhr-backend": "0.5.3",
+    "rimraf": "^2.6.1"
   },
   "peerDependencies": {
     "@angular/core": "^4.0.0",
