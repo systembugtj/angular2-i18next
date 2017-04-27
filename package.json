@@ -10,9 +10,8 @@
   ],
   "author": "Alex Poter",
   "scripts": {
-    "clean": "npm cache clean",
-    "ngc-build": "node_modules/.bin/ngc -p tsconfig.json",
-    "deploy": "yarn install && npm run ngc-build && npm publish ./"
+    "build": "node_modules/.bin/ngc -p tsconfig.json",
+    "deploy": "yarn install && npm run build && npm publish ./"
   },
   "dependencies": {
     "i18next": "2.5.1",
