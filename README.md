@@ -1,6 +1,10 @@
 # ngx-i18next
 
+[![npm version](https://badge.fury.io/js/ngx-i18next.svg)](https://badge.fury.io/js/ngx-i18next)
+[![Build Status](https://travis-ci.org/systembugtj/ngx-i18next.svg?branch=master)](https://travis-ci.org/systembugtj/ngx-i18next)
+
 forked from https://github.com/apoterenko/angular2-i18next
+
 An implementation of i18next wrapper for Angular [4.0.1 and AOT compatible].  
 
 ## Installation
